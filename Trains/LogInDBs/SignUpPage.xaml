@@ -1,0 +1,61 @@
+﻿<Window x:Class="LogInDBs.SignUpPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogInDBs"
+        mc:Ignorable="d"
+        Title="SignUpPage" Height="1080" Width="1545.6">
+
+    <Window.Background>
+        <ImageBrush ImageSource="https://www.timeforkids.com/wp-content/uploads/2020/02/feature-cover_-train-k1.jpg"/>
+    </Window.Background>
+
+
+    <Border Background="White" CornerRadius="20" Margin="519,10,377.2,116.4">
+
+
+        <StackPanel Margin="20,20,10.2,-290.6">
+
+
+
+            <Image Source="/resources/Screenshot 2023-03-05 180455.jpg" Height="55" Margin="0,0,9.6,0"/>
+
+
+
+            <Label Content="Sign Up" Foreground="Black" FontSize="25" HorizontalAlignment="Center" Style="{StaticResource CustomFont}" FontFamily="/LogInDBs;component/resources/#Sonsie One"/>
+
+
+            <Separator/>
+
+
+            <Label Content="First Name" Foreground="Black" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" FontSize="20"/>
+            <TextBox x:Name="txtFirstName" Background="#F5F5F5" Foreground="Black" FontSize="18"/>
+
+            <Label Content="Last Name" Foreground="Black" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" FontSize="20"/>
+            <TextBox x:Name="txtLastName" Background="#F5F5F5" Foreground="Black" FontSize="18"/>
+
+
+
+            <Label Content="Username" Foreground="Black" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" FontSize="20"/>
+            <TextBox x:Name="txtUsername" Background="#F5F5F5" Foreground="Black" FontSize="18"/>
+
+            <Label Content="Password" Foreground="Black" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" FontSize="20"/>
+            <PasswordBox x:Name="PasswordBox" Background="#F5F5F5" Foreground="Black" FontSize="18"/>
+
+
+            <Label Content="Repeat Password" Foreground="Black" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" FontSize="20"/>
+            <PasswordBox x:Name="RePasswordBox" Background="#F5F5F5" Foreground="Black" FontSize="18"/>
+
+            <Label Content="Email" Foreground="Black" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" FontSize="20"/>
+            <TextBox x:Name="txtEmail" Background="#F5F5F5" Foreground="Black" FontSize="18"/>
+
+            <Label Content="Telephone" Foreground="Black" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" FontSize="20"/>
+            <TextBox x:Name="txtTelephone" Background="#F5F5F5" Foreground="Black" FontSize="18" Margin="0,0,-0.8,0"/>
+            <Button x:Name="Submit" Content="Sign Up" Style="{StaticResource CustomFont}" Margin="60,30,60.6,90" Background="#E01508" Foreground="white" FontSize="18" Click="Submit_Click" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" />
+
+
+
+        </StackPanel>
+    </Border>
+</Window>

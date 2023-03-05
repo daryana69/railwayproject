@@ -1,0 +1,25 @@
+﻿<Window x:Class="LogInDBs.Schedule"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogInDBs"
+        mc:Ignorable="d"
+        Title="Schedule" Height="450" Width="800" Loaded="Window_Loaded">
+
+
+    <Window.Background>
+        <ImageBrush ImageSource="/resources/clouds-and-train-wallpaper-2560x1080_14.jpg"/>
+    </Window.Background>
+
+    <Window.Resources>
+        <local:TrainsDataSet x:Key="trainsDataSet"/>
+        <CollectionViewSource x:Key="scheduleViewSource" Source="{Binding Schedule, Source={StaticResource trainsDataSet}}"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource scheduleViewSource}">
+        <DataGrid Name ="GridViewThing" ItemsSource="{Binding}" Margin="171,146,154.6,113" FontFamily="/LogInDBs;component/resources/#Sarpanch Black"/>
+        <Label Content="Schedule" Foreground="Black" FontSize="60" FontFamily="/LogInDBs;component/resources/#Sonsie One" HorizontalAlignment="Center" Margin="203,23,95.6,0" VerticalAlignment="Top" Width="495"/>
+        <Button x:Name="Submit" Content="Sign Up" Style="{StaticResource CustomFont}" Margin="626,51,28.6,336" Background="#A2C5E1" Foreground="white" FontSize="18" Click="Submit_Click" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" />
+        <Button x:Name="TicketClerk" Content="Ticket Clerk Portal" Style="{StaticResource CustomFont}" Margin="32,51,609.6,336" Background="#A2C5E1" Foreground="white" FontSize="13" Click="Submit_Click" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" />
+    </Grid>
+</Window>
