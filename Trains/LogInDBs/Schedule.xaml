@@ -20,6 +20,6 @@
         <DataGrid Name ="GridViewThing" ItemsSource="{Binding}" Margin="171,146,154.6,113" FontFamily="/LogInDBs;component/resources/#Sarpanch Black"/>
         <Label Content="Schedule" Foreground="Black" FontSize="60" FontFamily="/LogInDBs;component/resources/#Sonsie One" HorizontalAlignment="Center" Margin="203,23,95.6,0" VerticalAlignment="Top" Width="495"/>
         <Button x:Name="Submit" Content="Sign Up" Style="{StaticResource CustomFont}" Margin="626,51,28.6,336" Background="#A2C5E1" Foreground="white" FontSize="18" Click="Submit_Click" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" />
-        <Button x:Name="TicketClerk" Content="Ticket Clerk Portal" Style="{StaticResource CustomFont}" Margin="32,51,609.6,336" Background="#A2C5E1" Foreground="white" FontSize="13" Click="Submit_Click" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" />
+        <Button x:Name="TicketClerk" Content="Ticket Clerk Portal" Style="{StaticResource CustomFont}" Margin="32,51,609.6,336" Background="#A2C5E1" Foreground="white" FontSize="13" Click="TicketClerk_Click" FontFamily="/LogInDBs;component/resources/#Sarpanch Black" />
     </Grid>
 </Window>
